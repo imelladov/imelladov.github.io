@@ -23,32 +23,46 @@ header h1 {
     padding: 10px 0;
 }
 
-/* Estilos del menú de navegación */
-.navbar {
+/* Estilos del dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
     background-color: #444;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar li {
-    float: left;
-}
-
-.navbar li a {
-    display: block;
     color: white;
-    text-align: center;
     padding: 14px 20px;
-    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
-.navbar li a:hover {
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
     background-color: #575757;
 }
 
