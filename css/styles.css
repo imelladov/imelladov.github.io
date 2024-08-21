@@ -1,26 +1,69 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
     box-sizing: border-box;
+}
+
+/* Estilos del header */
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Estilos del menú de navegación */
+.navbar {
+    background-color: #444;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #575757;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 
 /* Estilos del formulario de contacto */
-.contact-form {
-    background: #fff;
-    padding: 20px;
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
-    margin: 20px;
-}
-
 .contact-form h1 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -44,21 +87,20 @@ body {
 .contact-form button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #007bff;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
 /* Estilos responsivos */
 @media (max-width: 600px) {
-    .contact-form {
+    .container {
         padding: 15px;
-        margin: 10px;
     }
 
     .contact-form h1 {
